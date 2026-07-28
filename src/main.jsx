@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles.css';
 
@@ -37,9 +37,58 @@ const artworks = [
   }
 ];
 
+function Lightbox({ artworks, index, onClose, onPrev, onNext }) {
+  useEffect(() => {
+    const handleKey = (e) => {
+      if (e.key === 'Escape') onClose();
+      if (e.key === 'ArrowLeft') onPrev();
+      if (e.key === 'ArrowRight') onNext();
+    };
+    document.addEventListener('keydown', handleKey);
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.removeEventListener('keydown', handleKey);
+      document.body.style.overflow = '';
+    };
+  }, [onClose, onPrev, onNext]);
+
+  const work = artworks[index];
+
+  return (
+    <div className="lightbox" onClick={onClose}>
+      <div className="lightboxInner" onClick={(e) => e.stopPropagation()}>
+        <button className="lightboxClose" onClick={onClose} aria-label="關閉">&times;</button>
+        <button className="lightboxArrow lightboxPrev" onClick={onPrev} aria-label="上一張">&#8249;</button>
+        <img src={work.src} alt={work.alt} />
+        <button className="lightboxArrow lightboxNext" onClick={onNext} aria-label="下一張">&#8250;</button>
+        <p className="lightboxCaption">{work.alt}<span className="lightboxCount">{index + 1} / {artworks.length}</span></p>
+      </div>
+    </div>
+  );
+}
+
 function App() {
+  const [lightboxIndex, setLightboxIndex] = useState(null);
+
+  const closeLightbox = useCallback(() => setLightboxIndex(null), []);
+  const prevImage = useCallback(() => {
+    setLightboxIndex((i) => (i <= 0 ? artworks.length - 1 : i - 1));
+  }, []);
+  const nextImage = useCallback(() => {
+    setLightboxIndex((i) => (i >= artworks.length - 1 ? 0 : i + 1));
+  }, []);
+
   return (
     <main>
+      {lightboxIndex !== null && (
+        <Lightbox
+          artworks={artworks}
+          index={lightboxIndex}
+          onClose={closeLightbox}
+          onPrev={prevImage}
+          onNext={nextImage}
+        />
+      )}
       <nav className="nav">
         <a className="brand" href="#top">Nelly Liu</a>
         <div className="navLinks">
@@ -60,7 +109,7 @@ function App() {
             <a className="button secondary" href="mailto:hello@nellyliu.art">聯繫工作室</a>
           </div>
         </div>
-        <div className="heroImage">
+        <div className="heroImage" onClick={() => setLightboxIndex(1)} style={{ cursor: 'pointer' }}>
           <img src={artworks[1].src} alt="作品預覽佔位圖" />
           <span>預覽佔位圖片</span>
         </div>
@@ -81,7 +130,7 @@ function App() {
         </div>
         <div className="gallery">
           {artworks.map((work, index) => (
-            <article className="workCard" key={work.src}>
+            <article className="workCard" key={work.src} onClick={() => setLightboxIndex(index)} style={{ cursor: 'pointer' }}>
               <div className="workImage"><img src={work.src} alt={work.alt} loading="lazy" /></div>
               <div className="workMeta">
                 <p className="workNo">{String(index + 1).padStart(2, '0')}</p>
