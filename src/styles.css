@@ -11,7 +11,7 @@
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
-  font-family: ui-serif, Georgia, 'Times New Roman', serif;
+  font-family: 'Noto Serif TC', '思源宋體', 'Source Han Serif TC', '華康明體', 'PMingLiU', ui-serif, Georgia, 'Times New Roman', serif;
   background: var(--paper);
   color: var(--ink);
 }

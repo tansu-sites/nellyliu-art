@@ -5,35 +5,35 @@ import './styles.css';
 const artworks = [
   {
     "src": "/placeholders/artwork-01.jpg",
-    "alt": "Classical oil painting with putti and a dog"
+    "alt": "古典油畫，描繪天使與犬"
   },
   {
     "src": "/placeholders/artwork-02.jpg",
-    "alt": "Abstract mixed media painting in black and white"
+    "alt": "黑白抽象複合媒材繪畫"
   },
   {
     "src": "/placeholders/artwork-03.webp",
-    "alt": "Contemporary artwork placeholder"
+    "alt": "當代藝術作品佔位圖"
   },
   {
     "src": "/placeholders/artwork-04.jpg",
-    "alt": "Urban landscape artwork placeholder"
+    "alt": "城市風景佔位圖"
   },
   {
     "src": "/placeholders/artwork-05.jpg",
-    "alt": "Horse painting placeholder"
+    "alt": "馬匹繪畫佔位圖"
   },
   {
     "src": "/placeholders/artwork-06.jpg",
-    "alt": "Venus painting placeholder"
+    "alt": "維納斯繪畫佔位圖"
   },
   {
     "src": "/placeholders/artwork-07.jpg",
-    "alt": "Contemporary figure artwork placeholder"
+    "alt": "當代人物藝術佔位圖"
   },
   {
     "src": "/placeholders/artwork-08.jpg",
-    "alt": "Abstract artwork placeholder"
+    "alt": "抽象藝術佔位圖"
   }
 ];
 
@@ -43,41 +43,41 @@ function App() {
       <nav className="nav">
         <a className="brand" href="#top">Nelly Liu</a>
         <div className="navLinks">
-          <a href="#works">Works</a>
-          <a href="#about">About</a>
-          <a href="#exhibitions">Exhibitions</a>
-          <a href="#contact">Contact</a>
+          <a href="#works">作品</a>
+          <a href="#about">關於</a>
+          <a href="#exhibitions">展覽</a>
+          <a href="#contact">聯繫</a>
         </div>
       </nav>
 
       <section id="top" className="hero">
         <div className="heroText">
-          <p className="eyebrow">Artist portfolio preview</p>
+          <p className="eyebrow">藝術家作品集預覽</p>
           <h1>Nelly Liu</h1>
-          <p className="lead">A refined digital home for painting, image-making and future exhibition records.</p>
+          <p className="lead">一個精緻的數位空間，展示繪畫、影像創作與展覽紀錄。</p>
           <div className="heroActions">
-            <a className="button primary" href="#works">View selected works</a>
-            <a className="button secondary" href="mailto:hello@nellyliu.art">Contact studio</a>
+            <a className="button primary" href="#works">瀏覽精選作品</a>
+            <a className="button secondary" href="mailto:hello@nellyliu.art">聯繫工作室</a>
           </div>
         </div>
         <div className="heroImage">
-          <img src={artworks[1].src} alt="Artwork placeholder preview" />
-          <span>Preview image placeholder</span>
+          <img src={artworks[1].src} alt="作品預覽佔位圖" />
+          <span>預覽佔位圖片</span>
         </div>
       </section>
 
       <section className="intro">
         <p>
-          This preview website uses artwork images from the UniCredit Art Collection as temporary placeholders only.
-          Final artwork photography, captions, biography and exhibition details can be replaced later.
+          本預覽網站暫時採用 UniCredit 藝術典藏之作品圖片作為佔位圖。
+          正式作品攝影、圖說、個人簡歷及展覽資料將於日後替換。
         </p>
       </section>
 
       <section id="works" className="section">
         <div className="sectionHead">
-          <p className="eyebrow">Selected works</p>
-          <h2>Paintings and studies</h2>
-          <p>Placeholder curation for layout preview. Each work card is ready for final title, year, medium and dimensions.</p>
+          <p className="eyebrow">精選作品</p>
+          <h2>繪畫與習作</h2>
+          <p>版面預覽用佔位排列。每張作品卡片可填入最終標題、年份、媒材與尺寸。</p>
         </div>
         <div className="gallery">
           {artworks.map((work, index) => (
@@ -85,8 +85,8 @@ function App() {
               <div className="workImage"><img src={work.src} alt={work.alt} loading="lazy" /></div>
               <div className="workMeta">
                 <p className="workNo">{String(index + 1).padStart(2, '0')}</p>
-                <h3>Untitled Placeholder {index + 1}</h3>
-                <p>Year, medium and dimensions to be confirmed</p>
+                <h3>未命名佔位作品 {index + 1}</h3>
+                <p>年份、媒材及尺寸待確認</p>
               </div>
             </article>
           ))}
@@ -95,42 +95,42 @@ function App() {
 
       <section id="about" className="about">
         <div>
-          <p className="eyebrow">About the artist</p>
-          <h2>Nelly Liu creates quiet visual spaces between memory, material and observation.</h2>
+          <p className="eyebrow">關於藝術家</p>
+          <h2>Nelly Liu 在記憶、材質與觀察之間，創造寧靜的視覺空間。</h2>
         </div>
         <div className="aboutCopy">
           <p>
-            This section is prepared as a concise artist biography area. It can later include Nelly Liu's statement, education,
-            practice, exhibition history and collection notes.
+            此區域為藝術家簡歷專區，日後可加入 Nelly Liu 的創作自述、學歷背景、
+            創作實踐、展覽經歷及收藏紀錄。
           </p>
           <p>
-            The design keeps the artwork at the centre: generous white space, editorial typography, calm transitions and a simple
-            archive structure for future updates.
+            設計以作品為核心：充裕的留白、編輯式排版、沉穩的過渡動態，
+            以及簡潔的典藏架構，以便日後持續更新。
           </p>
         </div>
       </section>
 
       <section id="exhibitions" className="section muted">
         <div className="sectionHead">
-          <p className="eyebrow">Exhibitions</p>
-          <h2>Upcoming and past records</h2>
+          <p className="eyebrow">展覽</p>
+          <h2>即將舉行與過往紀錄</h2>
         </div>
         <div className="timeline">
-          <div><span>2026</span><strong>Portfolio launch</strong><p>Artist website preview and archive structure.</p></div>
-          <div><span>2025</span><strong>Exhibition title placeholder</strong><p>Venue, city and short description to be updated.</p></div>
-          <div><span>2024</span><strong>Group show placeholder</strong><p>Record can include press links, installation images and essays.</p></div>
+          <div><span>2026</span><strong>作品集上線</strong><p>藝術家網站預覽及典藏架構。</p></div>
+          <div><span>2025</span><strong>展覽名稱佔位</strong><p>展覽場地、城市及簡介待更新。</p></div>
+          <div><span>2024</span><strong>聯展佔位</strong><p>紀錄可包含媒體報導連結、展場裝置圖片及評論文章。</p></div>
         </div>
       </section>
 
       <section id="contact" className="contact">
-        <p className="eyebrow">Studio contact</p>
-        <h2>For artwork enquiries, collaborations and exhibition opportunities.</h2>
+        <p className="eyebrow">工作室聯繫</p>
+        <h2>歡迎洽詢作品、合作及展覽機會。</h2>
         <a className="button primary" href="mailto:hello@nellyliu.art">hello@nellyliu.art</a>
       </section>
 
       <footer>
-        <p>© {new Date().getFullYear()} Nelly Liu. All rights reserved.</p>
-        <p>Preview placeholders sourced from UniCredit Art Collection for layout reference only.</p>
+        <p>© {new Date().getFullYear()} Nelly Liu. 版權所有。</p>
+        <p>預覽佔位圖片取自 UniCredit 藝術典藏，僅供版面參考。</p>
       </footer>
     </main>
   );
