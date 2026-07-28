@@ -145,11 +145,11 @@ function App() {
       <section id="about" className="about">
         <div>
           <p className="eyebrow">關於藝術家</p>
-          <h2>Nelly Liu 在記憶、材質與觀察之間，創造寧靜的視覺空間。</h2>
+          <h2><em>Nelly Liu</em> 在記憶、材質與觀察之間，創造寧靜的視覺空間。</h2>
         </div>
         <div className="aboutCopy">
           <p>
-            此區域為藝術家簡歷專區，日後可加入 Nelly Liu 的創作自述、學歷背景、
+            此區域為藝術家簡歷專區，日後可加入 <em>Nelly Liu</em> 的創作自述、學歷背景、
             創作實踐、展覽經歷及收藏紀錄。
           </p>
           <p>
@@ -178,7 +178,7 @@ function App() {
       </section>
 
       <footer>
-        <p>© {new Date().getFullYear()} Nelly Liu. 版權所有。</p>
+        <p>© {new Date().getFullYear()} <em>Nelly Liu</em>. 版權所有。</p>
         <p>預覽佔位圖片取自 UniCredit 藝術典藏，僅供版面參考。</p>
       </footer>
     </main>
