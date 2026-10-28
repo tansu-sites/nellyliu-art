@@ -90,7 +90,7 @@ function App() {
         />
       )}
       <nav className="nav">
-        <a className="brand" href="#top">Nelly Liu</a>
+        <a className="brand" href="#top">Nelly Liu.Art｜濃．畫記</a>
         <div className="navLinks">
           <a href="#works">作品</a>
           <a href="#about">關於</a>
@@ -101,12 +101,13 @@ function App() {
 
       <section id="top" className="hero">
         <div className="heroText">
-          <p className="eyebrow">藝術家作品集預覽</p>
+          <p className="eyebrow">藝術家作品集・創作日誌</p>
           <h1>Nelly Liu</h1>
-          <p className="lead">一個精緻的數位空間，展示繪畫、影像創作與展覽紀錄。</p>
+          <p className="lead">以繪畫記錄生活，<br />讓風景、記憶與情感，<br />在色彩之間留下痕跡。</p>
+          <p className="englishLead">Painting life, memory and emotion through colour and light.</p>
           <div className="heroActions">
-            <a className="button primary" href="#works">瀏覽精選作品</a>
-            <a className="button secondary" href="mailto:mail@nellyliu.com">聯繫工作室</a>
+            <a className="button primary" href="#works">瀏覽作品｜Explore Artworks</a>
+            <a className="button secondary" href="mailto:mail@nellyliu.com">聯繫工作室｜Contact the Artist</a>
           </div>
         </div>
         <div className="heroImage" onClick={() => setLightboxIndex(1)} style={{ cursor: 'pointer' }}>
