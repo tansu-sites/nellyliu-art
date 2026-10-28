@@ -1,10 +1,10 @@
 # Nelly Liu Artist Website
 
-Artist portfolio preview for `nellyliu.art`.
+Artist portfolio preview for `nellyliu.com`.
 
 ## Live URLs
 
-- Production: https://nellyliu.art
+- Production: https://nellyliu.com
 - Vercel preview/production URL will be shown after deployment.
 
 ## Development

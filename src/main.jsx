@@ -106,7 +106,7 @@ function App() {
           <p className="lead">一個精緻的數位空間，展示繪畫、影像創作與展覽紀錄。</p>
           <div className="heroActions">
             <a className="button primary" href="#works">瀏覽精選作品</a>
-            <a className="button secondary" href="mailto:hello@nellyliu.art">聯繫工作室</a>
+            <a className="button secondary" href="mailto:hello@nellyliu.com">聯繫工作室</a>
           </div>
         </div>
         <div className="heroImage" onClick={() => setLightboxIndex(1)} style={{ cursor: 'pointer' }}>
@@ -174,7 +174,7 @@ function App() {
       <section id="contact" className="contact">
         <p className="eyebrow">工作室聯繫</p>
         <h2>歡迎洽詢作品、合作及展覽機會。</h2>
-        <a className="button primary" href="mailto:hello@nellyliu.art">hello@nellyliu.art</a>
+        <a className="button primary" href="mailto:hello@nellyliu.com">hello@nellyliu.com</a>
       </section>
 
       <footer>
