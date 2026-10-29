@@ -90,7 +90,7 @@ function App() {
         />
       )}
       <nav className="nav">
-        <a className="brand" href="#top">Nelly Liu.Art｜濃．畫記</a>
+        <a className="brand" href="#top">Nelly Liu.Art | 濃.畫記</a>
         <div className="navLinks">
           <a href="#works">作品</a>
           <a href="#about">關於</a>
@@ -102,7 +102,7 @@ function App() {
       <section id="top" className="hero">
         <div className="heroText">
           <p className="eyebrow">藝術家作品集・創作日誌</p>
-          <h1>Nelly Liu</h1>
+          <h1>Nelly Liu.Art | 濃.畫記</h1>
           <p className="lead">以繪畫記錄生活，<br />讓風景、記憶與情感，<br />在色彩之間留下痕跡。</p>
           <p className="englishLead">Painting life, memory and emotion through colour and light.</p>
           <div className="heroActions">
@@ -146,11 +146,11 @@ function App() {
       <section id="about" className="about">
         <div>
           <p className="eyebrow">關於藝術家</p>
-          <h2><em>Nelly Liu</em> 在記憶、材質與觀察之間，創造寧靜的視覺空間。</h2>
+          <h2><em>Nelly Liu.Art | 濃.畫記</em> 在記憶、材質與觀察之間，創造寧靜的視覺空間。</h2>
         </div>
         <div className="aboutCopy">
           <p>
-            此區域為藝術家簡歷專區，日後可加入 <em>Nelly Liu</em> 的創作自述、學歷背景、
+            此區域為藝術家簡歷專區，日後可加入 <em>Nelly Liu.Art | 濃.畫記</em> 的創作自述、學歷背景、
             創作實踐、展覽經歷及收藏紀錄。
           </p>
           <p>
@@ -179,7 +179,7 @@ function App() {
       </section>
 
       <footer>
-        <p>© {new Date().getFullYear()} <em>Nelly Liu</em>. 版權所有。</p>
+        <p>© {new Date().getFullYear()} <em>Nelly Liu.Art | 濃.畫記</em>. 版權所有。</p>
         <p>預覽佔位圖片取自 UniCredit 藝術典藏，僅供版面參考。</p>
       </footer>
     </main>
