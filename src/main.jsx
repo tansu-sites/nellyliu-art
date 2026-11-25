@@ -103,7 +103,7 @@ function App() {
         <div className="heroText">
           <p className="eyebrow">藝術家作品集・創作日誌</p>
           <h1>Nelly Liu.Art | 濃.畫記</h1>
-          <p className="lead">原創藝術・生活美學・以畫記錄生活<br /><br />以藝術感受生活，以色彩記錄時光。<br />透過不同繪畫媒介，分享原創作品、創作靈感與生活美學。</p>
+          <p className="lead">原創藝術・生活美學・以畫記錄生活<br /><br />以藝術感受生活，以色彩記錄時光。<br />透過不同繪畫媒介，分享原創作品、<span className="noWrap">創作靈感與生活美學。</span></p>
           <p className="englishLead">Original Art · Aesthetic Living<br /><br />Capturing life through art and colours.<br />Exploring different painting mediums, sharing original artworks, creative inspiration and the beauty of everyday life.</p>
           <div className="heroActions">
             <a className="button primary" href="#works">瀏覽作品｜Explore Artworks</a>
