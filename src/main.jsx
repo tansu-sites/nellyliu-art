@@ -111,7 +111,7 @@ function App() {
           </div>
         </div>
         <div className="heroImage">
-          <img src="/uploads/2026-11-25-262-yjqc0.jpg" alt="Nelly Liu 於畫室中的肖像，旁有 Nelly Liu.Art｜濃・畫記標誌" />
+          <img src="/uploads/2026-11-25-559-bazd0.jpg" alt="Nelly Liu 的半身肖像，身穿黑色上衣並以手托腮" />
           <span>Nelly Liu.Art | 濃.畫記</span>
         </div>
       </section>
