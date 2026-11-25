@@ -110,9 +110,9 @@ function App() {
             <a className="button secondary" href="mailto:mail@nellyliu.com">聯繫工作室｜Contact the Artist</a>
           </div>
         </div>
-        <div className="heroImage" onClick={() => setLightboxIndex(1)} style={{ cursor: 'pointer' }}>
-          <img src={artworks[1].src} alt="作品預覽佔位圖" />
-          <span>預覽佔位圖片</span>
+        <div className="heroImage">
+          <img src="/uploads/2026-11-25-262-yjqc0.jpg" alt="Nelly Liu 於畫室中的肖像，旁有 Nelly Liu.Art｜濃・畫記標誌" />
+          <span>Nelly Liu.Art | 濃.畫記</span>
         </div>
       </section>
 
